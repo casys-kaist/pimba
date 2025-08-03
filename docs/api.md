@@ -25,7 +25,7 @@ with Performance.setup(
 The same applies to the accuracy experiment API.. Below is a minimal example demonstrating how to use this API.
 
 ```python
-from pimba import Performance
+from pimba import Accuracy
 
 with Accuracy.setup(
     model="mamba2-2.7b",
