@@ -1,0 +1,104 @@
+opt:
+  7b:
+    num_decoders: 32
+    hidden_dim: 4096
+    num_heads: 32
+    head_dim: 128
+    dbyte: 2
+  70b:
+    num_decoders: 80
+    hidden_dim: 8192
+    num_heads: 64
+    head_dim: 128
+    dbyte: 2
+
+retnet:
+  2.7b:
+    num_decoders: 32
+    hidden_dim: 2560
+    num_heads: 10
+    head_dim: 256
+    state_dim: 512
+    dbyte: 2
+
+  70b:
+    num_decoders: 96
+    hidden_dim: 7680
+    num_heads: 10
+    head_dim: 768
+    state_dim: 1536
+    dbyte: 2
+
+gla:
+  2.7b:
+    num_decoders: 32
+    hidden_dim: 2560
+    num_heads: 5
+    head_dim: 256
+    state_dim: 512
+    dbyte: 2
+
+  70b:
+    num_decoders: 96
+    hidden_dim: 7680
+    num_heads: 5
+    head_dim: 768
+    state_dim: 1536
+    dbyte: 2
+
+hgrn2:
+  2.7b:
+    num_decoders: 32
+    hidden_dim: 2560
+    num_heads: 20
+    head_dim: 128
+    state_dim: 128
+    dbyte: 2
+
+  70b:
+    num_decoders: 96
+    hidden_dim: 7680
+    num_heads: 20
+    head_dim: 384
+    state_dim: 384
+    dbyte: 2
+
+mamba2:
+  2.7b:
+    num_decoders: 64
+    hidden_dim: 2560
+    num_heads: 80
+    head_dim: 128
+    state_dim: 64
+    dbyte: 2
+
+  70b:
+    num_decoders: 192
+    hidden_dim: 7680
+    num_heads: 80
+    head_dim: 384
+    state_dim: 192
+    dbyte: 2
+
+zamba2:
+  7b:
+    num_mamba_decoders: 81
+    num_transformer_decoders: 13
+    hidden_dim: 3584
+    num_attention_heads: 32
+    attention_head_dim: 224
+    num_mamba_heads: 112
+    mamba_head_dim: 64
+    mamba_state_dim: 64
+    dbyte: 2
+
+  70b:
+    num_mamba_decoders: 174
+    num_transformer_decoders: 28
+    hidden_dim: 7168
+    num_attention_heads: 64
+    attention_head_dim: 224
+    num_mamba_heads: 112
+    mamba_head_dim: 128
+    mamba_state_dim: 128
+    dbyte: 2

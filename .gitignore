@@ -1,0 +1,17 @@
+# python environment
+/.venv/
+
+# cache
+/.ruff_cache/
+/cache/
+__pycache__
+
+# environment
+/.env
+
+# result
+/res/
+/summary/
+
+# build
+/build/

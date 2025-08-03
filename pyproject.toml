@@ -1,0 +1,38 @@
+[project]
+name = "pimba"
+version = "0.1.0"
+description = "pimba.code"
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+  "causal-conv1d",
+  "fla",
+  "mamba-ssm",
+  "lm-eval==0.4.4",
+  "rich>=13.9.4",
+  "torch>=2.4,<2.5",
+  "transformers>=4.50.3",
+  "ruamel-yaml>=0.18.14",
+  "tqdm>=4.67.1",
+  "pandas>=2.2.3",
+  "matplotlib>=3.10.5",
+  "seaborn>=0.13.2",
+  "scipy>=1.15.2",
+]
+
+[tool.uv.sources]
+fla = { git = "https://github.com/waneon/flash-linear-attention", rev = "75f2833b8cb18a2040d9a5d283818fe220050578" }
+mamba-ssm = { url = "https://github.com/state-spaces/mamba/releases/download/v2.2.4/mamba_ssm-2.2.4+cu12torch2.4cxx11abiFALSE-cp312-cp312-linux_x86_64.whl" }
+causal-conv1d = { url = "https://github.com/Dao-AILab/causal-conv1d/releases/download/v1.4.0/causal_conv1d-1.4.0+cu122torch2.4cxx11abiFALSE-cp312-cp312-linux_x86_64.whl" }
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+  "clang-format>=20.1.8",
+  "cmake>=4.0.3",
+  "ninja>=1.11.1.4",
+  "ruff>=0.12.5",
+]

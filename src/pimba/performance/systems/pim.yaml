@@ -1,0 +1,39 @@
+Pimba:
+  hw: "Pimba"
+  use_command_scheduling: True
+  use_chunk_group: True
+  state_dbyte: 1
+  energy:
+    act: 901.12
+    rdwr: 919.04
+    comp: 478.72
+
+Pipelined:
+  hw: "Pipelined"
+  use_command_scheduling: True
+  use_chunk_group: True
+  state_dbyte: 2
+  energy:
+    act: 901.12
+    rdwr: 919.04
+    comp: 478.72
+
+Time-multiplexed:
+  hw: "Time-multiplexed"
+  use_command_scheduling: True
+  use_chunk_group: True
+  state_dbyte: 2
+  energy:
+    act: 901.12
+    rdwr: 919.04
+    comp: 478.72
+
+HBM-PIM:
+  hw: "HBM-PIM"
+  use_command_scheduling: True
+  use_chunk_group: True
+  state_dbyte: 2
+  energy:
+    act: 901.12
+    rdwr: 919.04
+    comp: 478.72
