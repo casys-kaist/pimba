@@ -17,7 +17,7 @@ with Performance.setup(
     gpu="A100",
 ) as exp:
     exp.print_config()
-    return exp.run()
+    print(exp.run())
 ```
 
 ## Accuracy experiment API
@@ -34,6 +34,6 @@ with Accuracy.setup(
     datasets=["wikitext"],
 ) as exp:
     exp.print_config()
-    return exp.run()
+    print(exp.run())
 ```
 
