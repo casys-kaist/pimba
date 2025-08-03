@@ -22,7 +22,7 @@ with Performance.setup(
 
 ## Accuracy experiment API
 
-The same applies to the accuracy experiment API.. Below is a minimal example demonstrating how to use this API.
+The same applies to the accuracy experiment API. Below is a minimal example demonstrating how to use this API.
 
 ```python
 from pimba import Accuracy
