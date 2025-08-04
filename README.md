@@ -43,6 +43,15 @@ We also document the challenges we encountered while preparing the code and a br
 - `docs/reproducibility.md` documents the challenges we faced while preparing the code.
 - `docs/api.md` provides a brief API reference to assist those who wish to extend our codebase.
 
+## Credits
+
+Our code is adapted and extended from the following sources:
+- GLA, HGRN2, and RetNet model code from [flash-linear-attention](https://github.com/fla-org/flash-linear-attention)
+- LLaMA, OPT, and Zamba2 model code from [transformers](https://github.com/huggingface/transformers)
+- Mamba2 model code from [mamba](https://github.com/state-spaces/mamba)
+- memory simulation code from [ramulator2](https://github.com/CMU-SAFARI/ramulator2)
+- system performance simulation code from [attacc_simulator](https://github.com/scale-snu/attacc_simulator)
+
 ## Citation
 
 If you want to cite our work, please cite our paper using the following BibTeX entry:
